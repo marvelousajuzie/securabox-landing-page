@@ -6,7 +6,8 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight, Bell, ChevronLeft } from "lucide-react"
 import Link from "next/link"
-import Logo from "@/components/logo"
+import Image from "next/image"
+
 
 export default function ComingSoon() {
   const [email, setEmail] = useState("")
@@ -64,7 +65,8 @@ export default function ComingSoon() {
               transition={{ duration: 0.5 }}
               className="flex items-center justify-center mb-6"
             >
-              <Logo size={64} className="text-green-500" />
+              <Image src={"./logo.png"} height={200} width={200} className="h-24 w-auto" alt="securabox" />
+        
             </motion.div>
 
             <motion.h1

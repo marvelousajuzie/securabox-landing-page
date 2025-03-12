@@ -1,10 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { Menu } from "lucide-react"
-import { motion } from "framer-motion"
-import NavDrawer from "./navbar-drawer"
-import Logo from "./logo"
+import { motion } from "framer-motion";
+import { Menu } from "lucide-react";
+import { useEffect, useState } from "react";
+import NavDrawer from "./navbar-drawer";
+
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -46,7 +47,8 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <Logo size={40} className="text-green-500" />
+            <Image src={"./logo.png"} height={200} width={200} className="h-24 w-full" alt="securabox" />
+            {/* <Logo size={40} className="text-green-500" /> */}
             <span className="ml-2 text-xl font-bold">SecuraBox</span>
           </motion.div>
 

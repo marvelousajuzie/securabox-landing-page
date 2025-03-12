@@ -3,9 +3,9 @@
 import type React from "react"
 
 import { motion } from "framer-motion"
-import { Twitter, Instagram, Linkedin, Github } from "lucide-react"
+import { Github, Instagram, Linkedin, Twitter } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
-import Logo from "./logo"
 
 export default function Footer() {
   return (
@@ -19,7 +19,7 @@ export default function Footer() {
           className="col-span-1 md:col-span-2"
         >
           <div className="flex items-center gap-2 mb-4">
-            <Logo size={32} className="text-green-500" />
+          <Image src={"./logo.png"} height={200} width={200} className="h-24 w-auto" alt="securabox" />
             <span className="text-xl font-bold">SecuraBox</span>
           </div>
           <p className="text-zinc-400 mb-6 max-w-md">
