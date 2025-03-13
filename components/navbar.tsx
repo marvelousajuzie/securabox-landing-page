@@ -47,7 +47,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <Image src={"./logo.png"} height={200} width={200} className="h-24 w-full" alt="securabox" />
+            <Image src={"./logo.png"} height={200} width={200} className="h-24 w-auto" alt="securabox" />
             {/* <Logo size={40} className="text-green-500" /> */}
             <span className="ml-2 text-xl font-bold">SecuraBox</span>
           </motion.div>
